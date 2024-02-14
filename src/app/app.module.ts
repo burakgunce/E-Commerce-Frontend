@@ -24,7 +24,8 @@ import { BaseComponent } from './base/base.component';
     NgxSpinnerModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    {provide: "baseUrl", useValue: "https://localhost:7152/api", multi: true}
   ],
   bootstrap: [AppComponent]
 })
